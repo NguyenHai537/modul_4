@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="frontend" class="xml.Developer">
+        <property name="id" value="1"/>
+        <property name="name" value="Ty"/>
+        <property name="major" value="Frontend"/>
+    </bean>
+
+    <bean id="backend" class="xml.Developer">
+        <property name="id" value="2"/>
+        <property name="name" value="Teo"/>
+        <property name="major" value="Backend"/>
+    </bean>
+</beans>
