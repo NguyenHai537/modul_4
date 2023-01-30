@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/home/save}" th:object="${demo}"
+      method="post" novalidate="novalidate">
+    <table>
+        <tr>
+            <td><b>Languages</b></td>
+            <td><select name="language" th:field="*{language}">
+                <option th:each="i : ${languages}"
+                        th:text="${i}" th:value="${i}">
+
+                </option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Page size</b></td>
+            <td>Show <select name="" id="abc" th:field="*{size}">
+                <option th:each="e : ${sizes}" th:text="${e}" th:value="${e}"></option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><b>Spams filter</b></td>
+            <td><input type="checkbox" name="Spam" th:field="*{spams}"><label> Enable spams filter</label></td>
+        </tr>
+        <tr>
+            <td><b>Signature</b></td>
+            <td><textarea name="description" id="" cols="30" rows="10" th:field="*{description}"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><label for=""><input type="submit" value="Update"> <input type="reset" value="Reset"></label></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
