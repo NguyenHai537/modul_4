@@ -12,6 +12,7 @@ import java.util.Optional;
 public class ProvinceService implements IProvinceService {
     @Autowired
     private IProvinceRepository provinceRepository;
+
     @Override
     public Iterable<Province> findAll() {
         return provinceRepository.findAll();

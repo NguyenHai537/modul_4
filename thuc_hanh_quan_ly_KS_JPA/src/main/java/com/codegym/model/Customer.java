@@ -12,18 +12,20 @@ public class Customer {
     private Long id;
     private String firstName;
     private String lastName;
+    private String number;
+
+    public Customer(Long id, String firstName, String lastName, String number, Province province) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.number = number;
+        this.province = province;
+    }
 
     @ManyToOne
     @JoinColumn(name = "province_id")
     private Province province;
 
-    public Province getProvince() {
-        return province;
-    }
-
-    public void setProvince(Province province) {
-        this.province = province;
-    }
 
     public Customer() {}
 
@@ -34,7 +36,13 @@ public class Customer {
 
     @Override
     public String toString() {
-        return String.format("Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
+        return "Customer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", number='" + number + '\'' +
+                ", province=" + province +
+                '}';
     }
 
     public Long getId() {
@@ -59,5 +67,20 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+    public String getNumber() {
+        return number;
+    }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 }

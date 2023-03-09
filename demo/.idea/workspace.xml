@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="252093f5-0afe-488a-8b97-f599dfadceb6" name="Changes" comment="" />
+    <list default="true" id="252093f5-0afe-488a-8b97-f599dfadceb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/confiration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/confiration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/controller/ProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/controller/ProvinceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/IGeneralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/java/com/codegym/service/ProvinceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_quan_ly_KS_JPA/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/nguye/OneDrive/ドキュメント/Codegym/modul_4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nguye/OneDrive/ドキュメント/Codegym/modul_4&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -65,6 +78,7 @@
       <updated>1675311026152</updated>
       <workItem from="1675311027381" duration="96000" />
       <workItem from="1675311132442" duration="20000" />
+      <workItem from="1676257571743" duration="11000" />
     </task>
     <servers />
   </component>

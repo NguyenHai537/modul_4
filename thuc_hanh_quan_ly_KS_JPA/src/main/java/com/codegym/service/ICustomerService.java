@@ -1,14 +1,14 @@
 package com.codegym.service;
 
+import com.codegym.dto.CustomerDto;
 import com.codegym.model.Customer;
-import com.codegym.model.Province;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-public interface ICustomerService extends IGeneralService<Customer> {
-    Page<Customer> findAll(Pageable pageable);
+public interface ICustomerService extends IGeneralService<CustomerDto> {
+    Page<CustomerDto> findAll(Pageable pageable) ;
 
-    Page<Customer> findAllByFirstNameContaining(String firstname, Pageable pageable);
+    Page<CustomerDto> findAllByFirstNameContaining(String firstname, Pageable pageable);
 
 
 }

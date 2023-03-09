@@ -1,5 +1,6 @@
 package com.codegym.repository;
 
+import com.codegym.dto.CustomerDto;
 import com.codegym.model.Customer;
 import com.codegym.model.Province;
 import org.springframework.data.domain.Page;

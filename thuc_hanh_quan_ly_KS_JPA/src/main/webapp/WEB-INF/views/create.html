@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Create customer</title>
+    <style>
+        .error-message{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<h1>Create customer</h1>
+<h1 th:text="#{create.heading}"></h1>
+Language: <a href="?lang=en">English</a> | <a href="?lang=vi">VietNam</a>
 <p>
-    <a href="/customers">Customer list</a>
+    <a href="/customers" th:text="#{create.link}"></a>
 </p>
 <th:block th:if="${message}">
     <p th:text="${message}"></p>
 </th:block>
-<form th:action="@{/create-customer}" th:object="${customer}" method="post">
+<form th:action="@{/create-customer}" th:object="${customerDto}" method="post">
     <table>
         <tr>
-            <td>First name:</td>
+            <td th:text="#{create.firstname}"></td>
             <td><input type="text" th:field="*{firstName}"/></td>
+            <td th:if="${#fields.hasErrors('firstName')}"
+                th:errors="*{firstName}"
+                th:class="error-message" ></td>
         </tr>
         <tr>
-            <td>Last name:</td>
+            <td th:text="#{create.lastname}"></td>
             <td><input type="text" th:field="*{lastName}"/></td>
         </tr>
         <tr>
-            <td>Province:</td>
+            <td th:text="#{create.phone}"></td>
+            <td><input type="text" th:field="*{number}"/></td>
+            <td th:if="${#fields.hasErrors('number')}"
+                th:errors="*{number}"
+                th:class="error-message" ></td>
+        </tr>
+        <tr>
+            <td th:text="#{create.province}"></td>
             <td>
                 <select th:field="*{province}">
                     <option th:each="p : ${provinces}" th:value="${p.id}" th:text="${p.name}"></option>
@@ -32,9 +48,31 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Create customer"></td>
+            <td><input type="submit" th:value="#{create.submit}"></td>
         </tr>
     </table>
 </form>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function () {-->
+<!--            $("button").click(function () {-->
+<!--                var div = $("div");-->
+<!--                div.animate({left: '100px'}, "slow");-->
+<!--                div.animate({fontSize: '100px'}, "slow");-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<button>Start Animation</button>-->
+<!--<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to-->
+<!--    first set the CSS position property of the element to relative, fixed, or absolute!</p>-->
+<!--<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Branch</title>
+</head>
+<body>
+<a href="/create-branch">Create new Branch</a>
+<h1>Branch</h1>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <th:block th:each="branch : ${branchs}">
+    <tr>
+      <td th:text="${branch.name}"></td>
+      <td><a th:href="@{/edit-province/__${branch.id}__}">Edit</a></td>
+      <td><a th:href="@{/delete-province/__${branch.id}__}">Delete</a></td>
+    </tr>
+  </th:block>
+</table>
+</body>
+</html>

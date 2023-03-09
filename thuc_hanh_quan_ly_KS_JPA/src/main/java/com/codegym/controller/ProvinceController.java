@@ -4,7 +4,6 @@ package com.codegym.controller;
 import com.codegym.model.Customer;
 import com.codegym.model.Province;
 import com.codegym.service.CustomerService;
-import com.codegym.service.IProvinceService;
 import com.codegym.service.ProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Optional;
 
 @Controller
-public class ProvinceController {
+public class ProvinceController  {
     @Autowired
     private ProvinceService provinceService;
 
@@ -30,7 +29,6 @@ public class ProvinceController {
         if (!provinceOptional.isPresent()){
             return new ModelAndView("/error.404");
         }
-
         Iterable<Customer> customers = customerService.findAllByProvince(provinceOptional.get());
         ModelAndView modelAndView = new ModelAndView("/province/view");
         modelAndView.addObject("province",provinceOptional.get());
